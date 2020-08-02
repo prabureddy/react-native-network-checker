@@ -38,6 +38,7 @@ That's it. you're ready to go.
 ## Contribution
 
 - [@prabu01](mailto:prabu0reddy777@gmail.com) Author.
+Please see the [contributing guide](/CONTRIBUTING.md)
 
 ## Questions
 
