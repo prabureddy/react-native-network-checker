@@ -22,6 +22,8 @@ That's it. you're ready to go.
 | Prop                         | Type     | Description                                                 | Default             |
 | :--------------------------- | :------: | :---------------------------------------------------------: | :------------------ |
 | position                     | `string` | `top` or `bottom`, Component to display                     | `bottom`            |
+| duration                     | `number` | Milliseconds to display connected to Internet text          | `5000`              |
+| style                        | `object` | Style object                                                | `{}`                |
 | connectedMessage             | `string` | Message to show when connected to internet                  | `Back Online`       |
 | connectedTextColor           | `string` | Color of text when connected to internet                    | `white`             |
 | connectedBackgroundColor     | `string` | Backgroundcolor of container when connected to internet     | `green`             |

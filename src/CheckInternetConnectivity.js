@@ -4,10 +4,14 @@ import { View, Text } from "react-native";
 import MessageBar from "./MessageBar";
 
 const NetInfo = require("@react-native-community/netinfo");
+const PropTypes = require("prop-types");
 
 const CheckInternetConnectivity = (props) => {
   const [isConnected, setIsConnected] = useState(true);
   const [notConnectedShown, setNotConnectedShown] = useState(false);
+
+  const duration = props.duration ? props.duration : 5000;
+  const style = props.style ? props.style : {};
 
   const [showBackOnline, setShowBackOnline] = useState(false);
   useEffect(() => {
@@ -16,9 +20,9 @@ const CheckInternetConnectivity = (props) => {
       setIsConnected(state.isConnected);
       if (isConnected && notConnectedShown) {
         setShowBackOnline(true);
-        var setTime = setTimeout(() => {
+        setTimeout(() => {
           setShowBackOnline(false);
-        }, 5000);
+        }, duration);
       } else if (!isConnected) {
         setShowBackOnline(false);
         setNotConnectedShown(true);
@@ -58,6 +62,7 @@ const CheckInternetConnectivity = (props) => {
           message={notConnectedMessage}
           textColor={notConnectedTextColor}
           backgroundColor={notConnectedBackgroundColor}
+          style={style}
         />
       )}
       {showBackOnline && (
@@ -65,6 +70,7 @@ const CheckInternetConnectivity = (props) => {
           message={connectedMessage}
           textColor={connectedTextColor}
           backgroundColor={connectedBackgroundColor}
+          style={style}
         />
       )}
       {position === "top" && (
@@ -72,6 +78,18 @@ const CheckInternetConnectivity = (props) => {
       )}
     </>
   );
+};
+
+CheckInternetConnectivity.propTypes = {
+  position: PropTypes.string,
+  duration: PropTypes.number,
+  style: PropTypes.object,
+  connectedMessage: PropTypes.string,
+  connectedTextColor: PropTypes.string,
+  connectedBackgroundColor: PropTypes.string,
+  notConnectedMessage: PropTypes.string,
+  notConnectedTextColor: PropTypes.string,
+  notConnectedBackgroundColor: PropTypes.string,
 };
 
 export default CheckInternetConnectivity;

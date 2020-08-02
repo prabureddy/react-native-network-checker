@@ -1,6 +1,6 @@
 {
   "name": "react-native-network-checker",
-  "version": "0.0.5",
+  "version": "0.1.1",
   "description": "A simple and customizable React Native component that checks internet connection and shows message about the connection.",
   "main": "index.js",
   "private": false,
@@ -47,7 +47,8 @@
     "metro-react-native-babel-preset": "^0.61.0"
   },
   "dependencies": {
-    "@react-native-community/netinfo": "^5.9.5"
+    "@react-native-community/netinfo": "^5.9.5",
+    "prop-types": "^15.7.2"
   },
   "peerDependencies": {
     "react": "16.1.1",
