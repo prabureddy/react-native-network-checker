@@ -10,16 +10,10 @@ npm install --save react-native-network-checker
 ```
 React Native Network Checker uses [``` @react-native-community/netinfo ```](https://github.com/react-native-community/react-native-netinfo) as a main dependency.
 
-### Important
-Install [``` @react-native-community/netinfo ```](https://github.com/react-native-community/react-native-netinfo) and follow the instructions to install and link the project to react native project.
+### Important - Dont forget this step
+This packages uses @react-native-community/netinfo as a dependency.
+ - Install [``` @react-native-community/netinfo ```](https://github.com/react-native-community/react-native-netinfo) and follow the instructions to install and link react-native-netinfo.
 
-#### Using React Native < 0.60
-
-You then need to link the native parts of the library for the platforms you are using. The easiest way to link the library is using the CLI tool by running this command from the root of your project:
-
-```
-react-native link @react-native-community/netinfo
-```
 That's it. you're ready to go.
 
 ### Props
