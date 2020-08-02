@@ -32,13 +32,13 @@ const CheckInternetConnectivity = (props) => {
   const position = props.position ? props.position : "bottom";
   const connectedMessage = props.connectedMessage
     ? props.connectedMessage
-    : "No Connection";
+    : "Back Online";
   const connectedTextColor = props.connectedTextColor
     ? props.connectedTextColor
     : "white";
   const connectedBackgroundColor = props.connectedBackgroundColor
     ? props.connectedBackgroundColor
-    : "grey";
+    : "green";
   const notConnectedMessage = props.notConnectedMessage
     ? props.notConnectedMessage
     : "No Connection";
