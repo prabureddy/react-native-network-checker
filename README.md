@@ -25,20 +25,20 @@ That's it. you're ready to go.
 ### Props
 
 
-| Prop                         | Type     | Description                                                 | Default        |
-| :--------------------------- | :------: | :---------------------------------------------------------: | :------------- |
-| position                     | `string` | `top` or `bottom`, Component to display                     | `bottom`       |
-| connectedMessage             | `string` | Message to show when connected to internet                  | `Back Online`  |
-| connectedTextColor           | `string` | Color of text when connected to internet                    | `white`        |
-| connectedBackgroundColor     | `string` | Backgroundcolor of container when connected to internet     | `green`        |
-| notConnectedMessage          | `string` | Message to show when not connected to internet              | `No Connection`|
-| notConnectedTextColor        | `string` | Color of text when not connected to internet                | `white`        |
-| notConnectedBackgroundColor  | `string` | Backgroundcolor of container when not connected to internet | `grey`         |
+| Prop                         | Type     | Description                                                 | Default             |
+| :--------------------------- | :------: | :---------------------------------------------------------: | :------------------ |
+| position                     | `string` | `top` or `bottom`, Component to display                     | `bottom`            |
+| connectedMessage             | `string` | Message to show when connected to internet                  | `Back Online`       |
+| connectedTextColor           | `string` | Color of text when connected to internet                    | `white`             |
+| connectedBackgroundColor     | `string` | Backgroundcolor of container when connected to internet     | `green`             |
+| notConnectedMessage          | `string` | Message to show when not connected to internet              | `No Connection`     |
+| notConnectedTextColor        | `string` | Color of text when not connected to internet                | `white`             |
+| notConnectedBackgroundColor  | `string` | Backgroundcolor of container when not connected to internet | `grey`              |
 
 ## Contribution
 
 - [@prabu01](mailto:prabu0reddy777@gmail.com) Author.
-Please see the [contributing guide](/CONTRIBUTING.md)
+Contribution are welcome!. Please see the [contributing guide](/CONTRIBUTING.md)
 
 ## Questions
 
