@@ -1,6 +1,6 @@
 {
   "name": "react-native-network-checker",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "A simple and customizable React Native component that checks internet connection and shows message about the connection.",
   "main": "index.js",
   "private": false,
