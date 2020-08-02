@@ -2,6 +2,8 @@
 [![npm version](https://img.shields.io/npm/v/react-native-network-checker.svg?style=flat-square)](https://www.npmjs.com/package/react-native-network-checker)
 [![npm downloads](https://img.shields.io/npm/dm/react-native-network-checker.svg?style=flat-square)](https://www.npmjs.com/package/react-native-network-checker)
 
+![react-native-network-checker Bhargava Prabu Reddy M](https://i.ibb.co/pQs7gKG/demo.gif)
+
 # Quick start
 
 ### Installation
@@ -15,6 +17,47 @@ This packages uses @react-native-community/netinfo as a dependency.
  - Install [``` @react-native-community/netinfo ```](https://github.com/react-native-community/react-native-netinfo) and follow the instructions to install and link react-native-netinfo.
 
 That's it. you're ready to go.
+
+### Basic Usage
+```jsx
+import React from 'react';
+import {
+  StyleSheet,
+  View,
+  Text,
+} from 'react-native';
+import NetworkChecker from 'react-native-network-checker';
+
+const App = () => {
+  return (
+    <NetworkChecker
+      position="bottom"
+      duration={2000} // In milliseconds
+      notConnectedMessage="Not connected to Internet!"
+      notConnectedTextColor="white"
+      notConnectedBackgroundColor="grey"
+      connectedMessage="Connected to Internet!"
+      connectedTextColor="white"
+      connectedBackgroundColor="green"
+    >
+      <View style={styles.screen}>
+        <Text>React Native Network Checker</Text>
+      </View>
+    </NetworkChecker>
+  );
+};
+
+const styles = StyleSheet.create({
+  screen: {
+    flex: 1,
+    justifyContent: 'center',
+    alignItems: 'center',
+  },
+});
+
+export default App;
+
+```
 
 ### Props
 
