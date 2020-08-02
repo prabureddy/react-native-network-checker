@@ -4,8 +4,6 @@
 
 # Quick start
 
-Get up and running with our Network Checker:
-
 ### Installation
 ```
 npm install --save react-native-network-checker
