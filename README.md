@@ -2,7 +2,7 @@
 [![npm version](https://img.shields.io/npm/v/react-native-network-checker.svg?style=flat-square)](https://www.npmjs.com/package/react-native-network-checker)
 [![npm downloads](https://img.shields.io/npm/dm/react-native-network-checker.svg?style=flat-square)](https://www.npmjs.com/package/react-native-network-checker)
 
-![react-native-network-checker Bhargava Prabu Reddy M](https://i.ibb.co/pQs7gKG/demo.gif)
+![react-native-network-checker Bhargava Prabu Reddy M](https://raw.githubusercontent.com/prabureddy/react-native-network-checker/master/videos/demo.gif)
 
 # Quick start
 
