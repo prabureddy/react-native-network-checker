@@ -18,13 +18,11 @@ const MessageBar = (props) => {
 };
 
 const styles = StyleSheet.create({
-  screen: { marginTop: 0, flex: 3 },
+  screen: {
+    flex: 0.03,
+  },
   center: {
-    position: "absolute",
-    bottom: 0,
-    width: "100%",
-    paddingVertical: 2,
-    flex: 1,
+    paddingVertical: 1,
     alignItems: "center",
     justifyContent: "center",
   },
