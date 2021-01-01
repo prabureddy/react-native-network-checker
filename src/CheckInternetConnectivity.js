@@ -1,10 +1,8 @@
 import React, { useState, useEffect } from "react";
 import { View, Text } from "react-native";
-// import NetInfo from "@react-native-community/netinfo";
+import NetInfo from "@react-native-community/netinfo";
+import PropTypes from "prop-types";
 import MessageBar from "./MessageBar";
-
-const NetInfo = require("@react-native-community/netinfo");
-const PropTypes = require("prop-types");
 
 const CheckInternetConnectivity = (props) => {
   const [isConnected, setIsConnected] = useState(true);
@@ -55,7 +53,7 @@ const CheckInternetConnectivity = (props) => {
   return (
     <>
       {position === "bottom" && (
-        <View style={{ flex: 100 }}>{props.children}</View>
+        <View style={{ flex: 1 }}>{props.children}</View>
       )}
       {!isConnected && (
         <MessageBar
@@ -73,9 +71,7 @@ const CheckInternetConnectivity = (props) => {
           style={style}
         />
       )}
-      {position === "top" && (
-        <View style={{ flex: 100 }}>{props.children}</View>
-      )}
+      {position === "top" && <View style={{ flex: 1 }}>{props.children}</View>}
     </>
   );
 };

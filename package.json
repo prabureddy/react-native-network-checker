@@ -1,12 +1,9 @@
 {
   "name": "react-native-network-checker",
-  "version": "0.1.2",
+  "version": "0.1.5",
   "description": "A simple and customizable React Native component that checks internet connection and shows message about the connection.",
   "main": "index.js",
   "private": false,
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/prabureddy/react-native-network-checker.git"
